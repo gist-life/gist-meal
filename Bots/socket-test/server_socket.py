@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 HOST = 'localhost'
-PORT = 65432
+PORT = 5000
 
 matcher: dict[float, str] = {
     110.413: 'date',

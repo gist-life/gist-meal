@@ -1,7 +1,7 @@
 const bot = BotManager.getCurrentBot();
 
 const HOST = 'localhost';
-const PORT = 65432;
+const PORT = 5000;
 
 bot.addListener(Event.MESSAGE, msg => {
     try {
