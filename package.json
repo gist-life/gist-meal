@@ -1,0 +1,39 @@
+{
+  "name": "@essentialib/datetime",
+  "version": "1.0.0",
+  "description": "template repository for convert to es5 (compatible with kakaotalk bot)",
+  "main": "dist/index.js",
+  "scripts": {
+    "set-dist-true": "node set.js",
+    "build": "babel Bots --out-dir dist --extensions \".ts,.js\" --copy-files --ignore \"*.json\" && npm run set-dist-true",
+    "build-js": "babel Bots --out-dir dist --extensions \".js\" --copy-files --ignore \"*.json,*.d.ts\" && npm run set-dist-true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/essentialib/datetime.git"
+  },
+  "files": [
+    "dist",
+    "api"
+  ],
+  "keywords": [],
+  "author": "rhseung",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-named-capturing-groups-regex": "^7.22.5",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "datetime": "^0.0.3",
+    "typed-emitter": "^2.1.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.24.0",
+    "babel-plugin-object-values-to-object-keys": "^1.0.2",
+    "babel-plugin-transform-es2017-object-entries": "^0.0.5",
+    "babel-plugin-transform-object-entries": "^1.0.0"
+  }
+}
